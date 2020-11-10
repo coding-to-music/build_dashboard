@@ -6,16 +6,46 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "all-site": "date && npm-run-all builda*",
-    "builda-1": "date && yarn create redwood-app $npm_package_config_installDir",
-    "builda-2": "date && cd $npm_package_config_installDir && sudo yarn rw g page home /",
-    "builda-15": "date && cd $npm_package_config_installDir && sudo yarn rw g deploy netlify",
-    "builda-16": "date && cd $npm_package_config_installDir && sudo yarn rw g auth netlify"  },
+    "builda0-1": "date && vue init webpack-simple $npm_package_config_appName",
+    "builda0-2": "date && cd $npm_package_config_targetDir && npm install",
+    "builda0-3": "date && cd $npm_package_config_targetDir && npm run dev",
+
+    "builda1-1": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda1-2": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.TempVarChart.vue $npm_package_config_codeDir/TempVarChart.vue",
+    "builda1-3": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Highlights.vue $npm_package_config_codeDir/Highlights.vue",
+    "builda1-4": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.UVIndex.vue $npm_package_config_codeDir/UVIndex.vue",
+    "builda1-5": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Visibility.vue $npm_package_config_codeDir/Visibility.vue",
+    "builda1-6": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.WindStatus.vue $npm_package_config_codeDir/WindStatus.vue",
+
+    "builda2-1": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda2-2": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.TempVarChart.vue $npm_package_config_codeDir/TempVarChart.vue",
+    "builda2-3": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.Highlights.vue $npm_package_config_codeDir/Highlights.vue",
+    "builda2-4": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.UVIndex.vue $npm_package_config_codeDir/UVIndex.vue",
+    "builda2-5": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.Visibility.vue $npm_package_config_codeDir/Visibility.vue",
+    "builda2-6": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.WindStatus.vue $npm_package_config_codeDir/WindStatus.vue",
+
+    "builda2-7": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/2.App.vue $npm_package_config_codeDir/App.vue",
+
+    "builda3-1": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-2": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-3": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-4": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-5": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-6": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-7": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-8": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+    "builda3-9": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
+
+    "builda4-1": "date && cd $npm_package_config_targetDir && deploy netlify",
+    "builda4-2": "date && cd $npm_package_config_targetDir && auth netlify",
   "author": "Thomas Connors <connors.tom@gmail.com> (https://github.com/coding-to-music)",
   "license": "MIT"
 }
   "config" : { 
-    "SourceDir" : "/home/connorstom/aprojects/projectSource/dashboard", 
-    "TargetDir" : "/home/connorstom/aprojects/dashboard" 
+    "appName" : "dashboard", 
+    "sourceDir" : "/home/connorstom/aprojects/projectSource/dashboard", 
+    "targetDir" : "/home/connorstom/aprojects/dashboard", 
+    "codeDir" : "/home/connorstom/aprojects/dashboard/src/components" 
   }, 
   "keywords": [],
   "author": "Thomas Connors <connors.tom@gmail.com> (https://github.com/coding-to-music)",
