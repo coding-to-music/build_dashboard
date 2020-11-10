@@ -10,6 +10,25 @@
     "builda0-2": "date && cd $npm_package_config_targetDir && npm install",
     "builda0-3": "date && cd $npm_package_config_targetDir && npm run dev",
 
+    Need to add XXX index.html
+    Need to add XXX google api key
+    Need to add XXX more content for index.html
+    Need to add XXX package.json
+    Need to add XXX webpack.config.js
+    Need to add XXX src/main.js
+    Need to add XXX App.vue
+    Need to add XXX src/css/style.css
+    Need to add XXX src/assets/calendar.svg
+    Need to add XXX src/assets/vlocation.svg
+    Need to add XXX src/assets/search.svg
+    Need to add XXX src/assets/winddirection.svg
+    Need to add XXX src/assets/windspeed.svg
+    Need to add XXX create directory src/components
+    Need to add XXX src/css/style.css
+    Need to add XXX src/components/Content.vue
+    Need to add XXX snippet for weather_data
+    Need to add XXX App.vue	
+
     "builda1-1": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Content.vue $npm_package_config_codeDir/Content.vue",
     "builda1-2": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.TempVarChart.vue $npm_package_config_codeDir/TempVarChart.vue",
     "builda1-3": "date && cd $npm_package_config_targetDir && cp $npm_package_config_sourceDir/1.Highlights.vue $npm_package_config_codeDir/Highlights.vue",
